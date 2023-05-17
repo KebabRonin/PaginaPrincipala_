@@ -1,0 +1,28 @@
+<html>
+<head><title>Pinochio</title>
+<style>
+input {border:0; background-color:#ecf0d1;}
+select {border:0; background-color:#ecf0d1;}
+</style>
+</head>
+<body style="background-image: url('pinocchio-art-slice.png');background-repeat: no-repeat; background-size: cover;">
+<h1 style="text-align: center; color:#ecf0d1;">Problema mea Pinochio</h1><br>
+<div style="color:#323ea8; border: 2px solid; padding:30px; position: absolute; left:20%; right:25%; background-image: url('ticket.jpg'); background-size: cover;">
+
+<form action=rezolvare.php method=POST>
+Pinochio a observat ca de fiecare data cand minte nasul ii creste cu <input name=minc type=number min=0 max=999 style=width: 5em value=0> cm, <br><br>
+iar cand nu minte nasul i se scurteaza cu <input name=adev type=number min=0 max=999 style=width: 5em value=0> <br><br>
+Pinochio minte o singura data in fiecare zi de scoala. Daca <select name=zi>
+<option>Luni</option>
+ <option>Marti</option> 
+ <option>Miercuri</option> 
+ <option>Joi</option> 
+ <option>Vineri</option> 
+ <option>Sambata</option> 
+ <option>Duminica</option> 
+</select> nasul lui Pinochio are <input name=init type=number min=0 max=999 style=width: 5em value=0> cm<br><br> cat de lung ii va fi nasul dupa <input name=nrzil type=number min=0 max=999 style=width: 5em value=0> zile?<br><br>
+<input type=submit value="Raspunde" style="position:absolute; right:10%">
+</div>
+</form>
+</body>
+</html>
